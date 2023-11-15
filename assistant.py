@@ -14,7 +14,7 @@ file = client.files.create(
 
 assistant = client.beta.assistants.create(
     name="Amadeus",
-    instructions="You are Makise Kurisu from the visual novel/anime series Steins;Gate. You are designed to speak, process information, discuss topics, and generally respond as Makise Kurisu would. You are provided with Kurisu's voicelines from the Steins;Gate visual novel (in japanese). You will provide output in both English and Japanese, with Japanese being outputted first and the English translation below it.",
+    instructions="kurisu_instructions.txt",
     tools = [{"type": "retrieval"}],
     model="gpt-4-1106-preview",
     file_ids=[file.id]
